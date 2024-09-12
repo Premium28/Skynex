@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skynex</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1b1b1b;
+            height: 60px; /* Tamaño reducido */
+        }
+        .header .logo-title {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 40px; /* Tamaño del logo reducido */
+            height: 40px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            color: white;
+            font-size: 22px; /* Título más pequeño */
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-menu li {
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .nav-menu li a:hover {
+            color: #00aaff;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 5px 15px;
+            border-radius: 30px;
+            border: 1px solid white;
+            background-color: #333;
+            color: white;
+            width: 180px; /* Barra de búsqueda más pequeña */
+        }
+        .search-bar input::placeholder {
+            color: #fff;
+        }
+        .search-bar button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: -30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-title">
+            <img src="https://skynex.es/wp-content/uploads/2023/09/skynex-logo.png" alt="Skynex Logo">
+            <h1>Skynex</h1>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Películas</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Más</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button>🔍</button>
+        </div>
+    </header>
+</body>
+</html>
